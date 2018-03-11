@@ -5,7 +5,7 @@
 let constants = {
    ningaRoute : '/ninja',
    ninjaRouteId : '/ninja:id',
-   idRequired : 'Id field is required'
+   nameRequired : 'field is required.'
 };
 
 module.exports = Object.freeze(constants); 

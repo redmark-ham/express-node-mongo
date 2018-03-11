@@ -6,7 +6,7 @@ const schema = mongoose.Schema;
 const ninjaSchema = new schema ({
     name : {
         type: String,
-        required:[true, constants.idRequired]
+        required:[true, constants.nameRequired]
     },
     rank: {
         type:String
@@ -18,6 +18,6 @@ const ninjaSchema = new schema ({
     // TODO: add in geo location
 });
 
-const Ninja = mongoose.model('ninja', ninjaSchema);
+const ninjaModel = mongoose.model('Ninja', ninjaSchema);
 
-module.exports = Ninja;
+module.exports = ninjaModel;
