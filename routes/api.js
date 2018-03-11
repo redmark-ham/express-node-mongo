@@ -24,10 +24,9 @@ router.put(constants.ninjaRouteId, (req, res, next) => {
 });
 
 router.delete(constants.ninjaRouteId, (req, res, next) => {
-  res.send({
-     type: 'DELETE',
-     body: req.body
-  });
+  ninjaModel.findByIdAndRemove({_id: req.params.id}).then(function(ninja) {
+    res.send(ninja);
+  }).catch(next);
 });
 
 module.exports = router;

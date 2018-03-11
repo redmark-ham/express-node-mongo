@@ -4,7 +4,7 @@
 
 let constants = {
    ningaRoute : '/ninja',
-   ninjaRouteId : '/ninja:id',
+   ninjaRouteId : '/ninja/:id',
    nameRequired : 'field is required.'
 };
 
