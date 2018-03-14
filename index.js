@@ -17,6 +17,9 @@ mongoose.connect('mongodb://localhost:27017/ninjago', function(error) {
 });
 
 // Middleware section
+// Express static middleware
+app.use(express.static('public'));
+
 // Add the body-parser middleware 
 app.use(bodyParser.json());
 
