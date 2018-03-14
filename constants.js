@@ -3,9 +3,9 @@
 //------------------------------------------------------------------------------
 
 let constants = {
-   ningaRoute : '/ninja',
-   ninjaRouteId : '/ninja/:id',
-   nameRequired : 'field is required.'
+  ningaRoute: '/ninja',
+  ninjaRouteId: '/ninja/:id',
+  nameRequired: 'field is required.'
 };
 
-module.exports = Object.freeze(constants); 
+module.exports = Object.freeze(constants);
