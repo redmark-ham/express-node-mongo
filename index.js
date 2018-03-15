@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost:27017/ninjago', function(error) {
 // Express static middleware
 app.use(express.static('public'));
 
-// Add the body-parser middleware 
+// Add the body-parser middleware
 app.use(bodyParser.json());
 
 // Routes middleware

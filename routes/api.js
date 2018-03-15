@@ -14,7 +14,7 @@ router.get(constants.ningaRoute, (req, res, next) => {
       }
     }
     if (availableNinjas.length > 0) res.send(availableNinjas);
-  });
+  }).catch(next);
 });
 
 // get a list of ninjas from the db  (Fails with geoNear is not a function)
