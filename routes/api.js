@@ -1,7 +1,8 @@
 const express = require('express');
-const router = express.Router();
 const constants = require('../constants');
 const ninjaModel = require('../models/ninja');
+
+const router = express.Router();
 
 // get a list of ninjas from the db
 router.get(constants.ningaRoute, (req, res, next) => {
