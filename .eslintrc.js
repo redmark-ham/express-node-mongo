@@ -14,6 +14,7 @@ module.exports = {
         }
     },
     "rules": {
+        "prefer-template": "warn",
         "no-unused-vars" : ["error", { "vars": "local", "args" : "none" }],
         "import/newline-after-import": ["warn", { "count": 1 }],
         "object-curly-spacing": ["warn", "always"],
